@@ -39,6 +39,7 @@
                     <div class="col-12">
                         <div class="player">オリックス・山本由伸 選手
                         </div>
+                        <div class="player_detail"><a href="">プロフィールを見る</a></div>
                     </div>
             </div>
         </section>
