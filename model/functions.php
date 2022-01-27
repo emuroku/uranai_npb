@@ -15,3 +15,9 @@ function get_csrf_token(){
     set_session('csrf_token', $token);
     return $token;
 }
+
+// SESSIONの$nameキーの値に$valueを設定する
+function set_session($name, $value){
+    $_SESSION[$name] = $value;
+}
+
