@@ -24,7 +24,7 @@
     <div class="container">
         <section>
             <div class="result_animal">
-                <h5><i class="fa-solid fa-pen-field"></i>あなたは...</h3>
+                <h5>>あなたは...</h3>
                     <div class="col-12">
                         <div class="users_animal">コアラです！
                             <img src="<?php print(IMG_PATH . 'animals/' . 'koala.png'); ?>" class="animal_img">
@@ -35,9 +35,15 @@
 
         <section>
             <div class="result_player">
-                <h5><i class="fa-solid fa-pen-field"></i>あなたと相性が最強なのは...</h3>
+                <h5><i class="fas fa-baseball-ball"></i>あなたと相性が最強なのは...</h3>
                     <div class="col-12">
-                        <div class="player">オリックス・山本由伸 選手
+                        <div class="player">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <td>オリックス・バファローズ</td>
+                                    山本由伸 選手
+                                </tbody>
+                            </table>
                         </div>
                         <div class="player_detail"><a href="">プロフィールを見る</a></div>
                     </div>
