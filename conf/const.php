@@ -1,7 +1,7 @@
 <?php
 
 // 関数ファイルのディレクトリを指定
-define('MODEL_PATH', $SERVER['DOCUMENT_ROOT'] . '/../model/');
+define('MODEL_PATH', $SERVER['DOCUMENT_ROOT'] . '../model/');
 
 // viewファイルのディレクトリを指定
 define('VIEW_PATH', $SERVER['DOCUMENT_ROOT'] . '../view/');
