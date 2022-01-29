@@ -35,8 +35,8 @@
                     <div class="form-group">
                         <p>生年月日を入力してください</p>
                         <div class="birthday">
-                            <input type="number" class="form-control form-control-lg" name="year" required min="1900"
-                                max="2100" id="year" placeholder value="1990">
+                            <input type="number" class="form-control form-control-lg" name="year" required min="1926"
+                                max="2030" id="year" placeholder value="1990">
                             <p class="birth_txt"><label for="year">年</label></p>
 
                             <input type="number" class="form-control form-control-lg" name="month" required min="1"

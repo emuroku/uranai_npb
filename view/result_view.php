@@ -22,6 +22,7 @@
 
     <!-- container -->
     <div class="container">
+        <?php print($result_num); ?>
         <section>
             <div class="result_animal">
                 <h5>>あなたは...</h3>
