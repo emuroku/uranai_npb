@@ -53,8 +53,10 @@ function fetch_query($db, $sql, $params = array()){
     return false;
 }
 
+// 占い結果(リザルトページに表示する[ユーザーの動物タイプ、動物の画像、相性の良い選手名、チーム名、プロフィールリンク]を取得
+
 // ユーザーのどうぶつ占いの結果を計算して結果ナンバーを返す
-function uranai($db, $year, $month, $day){
+function get_animal_uranai_result($db, $year, $month, $day){
     // 結果ナンバーを設定
     $result_num = 0;
 
@@ -73,6 +75,73 @@ function uranai($db, $year, $month, $day){
     }
     return $result_num;
 }
+
+// どうぶつ占いの結果ナンバーの各種情報（テキスト、詳細リンク、どうぶつ名）を取得して配列で返す
+function get_uranai_result($db, $num){
+    // SQL文作成
+    $sql = "
+        SELECT *
+        FROM animal_result_list
+        WHERE num = {$num}
+    ";
+
+    // SQLを実行し、配列として取得
+    $result = fetch_query($db, $sql);
+
+    return $result;
+}
+
+// ユーザーの誕生日情報からユーザーの結果情報を取得して配列で返す
+function get_user_result($db, $year, $month, $day){
+    // 結果ナンバーの取得
+    $num = get_animal_uranai_result($db, $year, $month, $day);
+
+    // 結果のどうぶつの情報を取得して返す
+    return get_uranai_result($db, $num);
+}
+
+// ユーザーの動物占いの結果からベストパートナーの選手情報を取得して配列で返す
+function get_player_result($db, $num){
+    // compatibility listからベストパートナーのナンバーを取得
+    $partner_list = get_partner_num($db, $num);
+    // ベストパートナーの選手の番号を取得
+    $best_partner_num = $partner_list['best_partner_num'];
+    // SQL文作成
+    $sql = "
+        SELECT 
+            players_list.name,
+            players_list.team,
+            animal_result_list.text
+        FROM
+            players_list
+        JOIN
+            animal_result_list
+        ON
+            players_list.num = animal_result_list.num
+        WHERE 
+            players_list.num = {$best_partner_num}
+    ";
+
+    // SQLを実行し、配列として取得
+    $result = fetch_query($db, $sql);
+    var_dump($result);
+    return $best_partner_num;
+}
+
+ // compatibility listからベスト・バッドパートナーのナンバーを取得して返す
+ function get_partner_num($db, $user_num){
+
+    // SQL文作成
+    $sql = "
+        SELECT * FROM compatibility_list
+        WHERE num = {$user_num}
+    ";
+
+    // SQLを実行し、配列として取得
+    $result = fetch_query($db, $sql);
+    return $result;
+ }
+    
 
 // 早見表テーブルから計算用のtmp_numを取得して返す
 function get_tmp_num($db, $year, $month){

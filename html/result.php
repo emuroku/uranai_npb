@@ -16,7 +16,12 @@ $birth_year = get_post('year');
 $birth_month = get_post('month');
 $birth_day = get_post('day');
 
-$result_num = uranai($db, $birth_year, $birth_month, $birth_day);
+// ユーザーのどうぶつ占い結果を取得
+$user_num = get_animal_uranai_result($db, $birth_year, $birth_month, $birth_day);
+$user_result = get_user_result($db, $birth_year, $birth_month, $birth_day);
+
+// ベストパートナーの選手の結果を取得
+$player_result = get_player_result($db, $user_num);
 
 // topページのクライアントソースファイル読み込み
 include_once VIEW_PATH . 'result_view.php';

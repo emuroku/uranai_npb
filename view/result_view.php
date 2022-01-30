@@ -22,13 +22,13 @@
 
     <!-- container -->
     <div class="container">
-        <?php print($result_num); ?>
+        <?php print($user_result); ?>
         <section>
             <div class="result_animal">
                 <h5>>あなたは...</h3>
                     <div class="col-12">
-                        <div class="users_animal">コアラです！
-                            <img src="<?php print(IMG_PATH . 'animals/' . 'koala.png'); ?>" class="animal_img">
+                        <div class="users_animal"><?php print($user_result['text']); ?>
+                            <img src="<?php print(IMG_PATH . 'animals/' . $user_result['animal'] . '.png'); ?>" class="animal_img">
                         </div>
                     </div>
             </div>
