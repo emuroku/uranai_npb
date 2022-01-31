@@ -54,21 +54,7 @@
 
 
             <!-- Twitter投稿誘導 -->
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5><a id="result"></a></h5>
-                        <p>作成した画像をぜひTwitterで紹介してください！<br>
-                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"
-                                    style="color: #55acee;"></i>つぶやく</a>
-                        </p>
 
-                        <small>↓こちらを付けてシェアしてくださると嬉しいです</small>
-                        <textarea class="form-control"
-                            area-label="With textarea"> #Bs応援タオルメーカー https://emuroku.github.io/buffaloes_towel_maker/</textarea>
-                    </div>
-                </div>
-            </div>
     </div>
 </body>
 
