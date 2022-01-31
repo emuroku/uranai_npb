@@ -124,8 +124,7 @@ function get_player_result($db, $num){
 
     // SQLを実行し、配列として取得
     $result = fetch_query($db, $sql);
-    var_dump($result);
-    return $best_partner_num;
+    return $result;
 }
 
  // compatibility listからベスト・バッドパートナーのナンバーを取得して返す

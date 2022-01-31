@@ -25,9 +25,9 @@ button{
 }
 .animal_img{
         width: 300px;
-        height: 180px;
+        height: 220px;
         object-fit: cover; 
-        border: solid 5px;
+        border: solid 4px #AAAAAA;
 }
 
 
@@ -37,8 +37,14 @@ button{
 
 .users_animal{
     margin: 20px;
+    font-size: 30px;
+    color: #555555;
 }
 
 .copyright{
     text-align: center;
+}
+
+i{
+  margin: 10px 10px;  
 }

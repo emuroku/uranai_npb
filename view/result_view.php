@@ -17,39 +17,57 @@
     <nav class="navbar navbar-expand-sm justify-content-center navbar-light bg-light">
         <i class="fas fa-heart fa-2x"></i>
         <h2> あなたと相性最強なNPB選手占い</h2><i class="fas fa-heart fa-2x"></i>
-        <i class="fas fa-home"></i>
+        <!-- <i class="fas fa-home"></i> -->
     </nav>
 
     <!-- container -->
     <div class="container">
-        <?php print($user_result); ?>
-        <section>
-            <div class="result_animal">
-                <h5>>あなたは...</h3>
+        <h5><i class="fa-solid fa-pen-field"></i>どうぶつ占いで、あなたと相性が最強の現役プロ野球選手を占います</h3>
+            <section>
+                <div class="result_animal">
+                    <p>あなたは...</p>
                     <div class="col-12">
-                        <div class="users_animal"><?php print($user_result['text']); ?>
-                            <img src="<?php print(IMG_PATH . 'animals/' . $user_result['animal'] . '.png'); ?>" class="animal_img">
+                        <div class="users_animal">
+                            <h3><?php print($user_result['text']); ?></h3>
                         </div>
+                        <img src="<?php print(IMG_PATH . 'animals/' . $user_result['animal'] . '.png'); ?>" class="animal_img">
                     </div>
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <section>
-            <div class="result_player">
-                <h5><i class="fas fa-baseball-ball"></i>あなたと相性が最強なのは...</h3>
-                    <div class="col-12">
-                        <div class="player">
-                            <table class="table table-striped">
-                                <tbody>
-                                    <td>オリックス・バファローズ</td>
-                                    山本由伸 選手
-                                </tbody>
-                            </table>
+            <section>
+                <div class="result_player">
+                    <h5><i class="fas fa-baseball-ball"></i>あなたと相性が最強なのは...</h5>
+                        <div class="col-12">
+
+                            <div class="player_info">
+                                <div class="player_team">
+                                    <h4>
+                                        <?php print($player_result['team']); ?>
+                                    </h4>
+                                </div>
+                                <div class="player_name">
+                                    <h2>
+                                        <?php print($player_result['name']); ?>
+                                    </h2>
+                                </div>
+                            </div>
                         </div>
-                        <div class="player_detail"><a href="">プロフィールを見る</a></div>
+                        <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5><a id="result"></a></h5>
+                        <p>結果をシェア<br>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"
+                                    style="color: #55acee;"></i>つぶやく</a>
+                        </p>
+                        <textarea class="form-control"
+                            area-label="With textarea"> #あなたと相性最強なNPB選手占い</textarea>
                     </div>
+                </div>
             </div>
-        </section>
+                </div>
+            </section>
     </div>
 
 
