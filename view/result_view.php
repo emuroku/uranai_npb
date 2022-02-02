@@ -7,7 +7,7 @@
     <title>あなたと相性最強なNPB選手占い</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'result.css'); ?>">
+    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/result.css'); ?>">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -42,15 +42,13 @@
 
                             <div class="player_info">
                                 <div class="player_team">
-                                    <h4>
                                         <?php print($player_result['team']); ?>
-                                    </h4>
                                 </div>
                                 <div class="player_name">
-                                    <h2>
                                         <?php print($player_result['name']); ?>
-                                    </h2>
                                 </div>
+                                <div class = "player_type">タイプ：
+                                        <?php print($player_result['text']); ?>
                             </div>
                         </div>
                         <div class="col-12">
@@ -62,7 +60,9 @@
                                     style="color: #55acee;"></i>つぶやく</a>
                         </p>
                         <textarea class="form-control"
-                            area-label="With textarea"> #あなたと相性最強なNPB選手占い</textarea>
+                            area-label="With textarea">
+                        私の最強パートナーは<?php print($player_result['team'] . ' ' . $player_result['name'] . '選手！' . '#あなたと相性最強なNPB選手占い'); ?>
+                        </textarea>
                     </div>
                 </div>
             </div>
