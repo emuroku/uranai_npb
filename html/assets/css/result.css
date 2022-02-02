@@ -40,6 +40,22 @@ button{
     font-size: 30px;
     color: #555555;
 }
+.player_info{
+    margin: 20px;
+}
+
+.player_team{
+    font-size: 20px;
+}
+
+.player_name{
+    font-size: 40px;
+}
+
+.player_type{
+    font-size: 15px;
+    margin: 10px 0;
+}
 
 .copyright{
     text-align: center;
