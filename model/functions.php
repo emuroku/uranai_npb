@@ -10,7 +10,7 @@ function set_error($error){
 function get_random_string($length=20){
     // ハッシュ関数でランダムの文字列を作成し、指定された文字数で文字列を切り取って返す
     return substr(base_convert(hash('sha256', uniqid()), 16, 36), 0, $length);
-}
+}de
 
 // トークンを生成し、セッションにセットして生成したトークンを返す
 function get_csrf_token(){
@@ -94,7 +94,7 @@ function get_uranai_result($db, $num){
 // ユーザーの誕生日情報からユーザーの結果情報を取得して配列で返す
 function get_user_result($db, $year, $month, $day){
     // 結果ナンバーの取得
-    $num = get_animal_uranai_result($db, $year, $month, $day);
+    $num = get_animal_uranai_result($db, $year, $month, $day);de
 
     // 結果のどうぶつの情報を取得して返す
     return get_uranai_result($db, $num);

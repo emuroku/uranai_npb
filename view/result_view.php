@@ -26,6 +26,9 @@
             <section>
                 <div class="result_animal">
                     <p>あなたは...</p>
+        <section>
+            <div class="result_animal">
+                <h5>>あなたは...</h3>
                     <div class="col-12">
                         <div class="users_animal">
                             <h3><?php print($user_result['text']); ?></h3>
@@ -56,9 +59,7 @@
                             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="私と相性が最強なのは <?php print($player_result['team'] . ' '
                                                                                                                                             . $player_result['name'] . '選手！'); ?> " data-url="http://uranai_npb.com" data-hashtags="あなたと相性が最強な野球選手診断,どうぶつ占い" data-size="large" data-show-count="false">Tweet</a>
                             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                    </div>
-            </section>
+        
     </div>
 
 
