@@ -64,3 +64,10 @@ button{
 i{
   margin: 10px 10px;  
 }
+
+.share{
+    font-size: 16px;
+    display: flex;
+    vertical-align: middle;
+    padding: 20px, 10px;
+}
