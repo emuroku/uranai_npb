@@ -25,9 +25,9 @@ button{
 }
 .animal_img{
         width: 300px;
-        height: 180px;
+        height: 220px;
         object-fit: cover; 
-        border: solid 5px;
+        border: solid 4px #AAAAAA;
 }
 
 
@@ -37,8 +37,37 @@ button{
 
 .users_animal{
     margin: 20px;
+    font-size: 30px;
+    color: #555555;
+}
+.player_info{
+    margin: 20px;
+}
+
+.player_team{
+    font-size: 20px;
+}
+
+.player_name{
+    font-size: 40px;
+}
+
+.player_type{
+    font-size: 15px;
+    margin: 10px 0;
 }
 
 .copyright{
     text-align: center;
+}
+
+i{
+  margin: 10px 10px;  
+}
+
+.share{
+    font-size: 16px;
+    display: flex;
+    vertical-align: middle;
+    padding: 20px, 10px;
 }

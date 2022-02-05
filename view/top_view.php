@@ -18,7 +18,7 @@
 <body>
     <!-- navigation -->
     <nav class="navbar navbar-expand-sm justify-content-center navbar-light bg-light">
-        <i class="fas fa-heart fa-2x"></i><h2> あなたと相性最強なNPB選手占い</h2><i class="fas fa-heart fa-2x"></i>
+        <i class="fas fa-heart fa-2x"></i><h2> あなたと相性が最強な野球選手診断 </h2><i class="fas fa-heart fa-2x"></i>
     </nav>
 
     <!-- container -->
@@ -35,15 +35,15 @@
                     <div class="form-group">
                         <p>生年月日を入力してください</p>
                         <div class="birthday">
-                            <input type="number" class="form-control form-control-lg" name="year" required min="1900"
-                                max="2100" id="year" placeholder value="1990">
+                            <input type="number" class="form-control form-control-lg col-4" name="year" required min="1926"
+                                max="2030" id="year" placeholder value="1990">
                             <p class="birth_txt"><label for="year">年</label></p>
 
-                            <input type="number" class="form-control form-control-lg" name="month" required min="1"
+                            <input type="number" class="form-control form-control-lg col-2" name="month" required min="1"
                                 max="12" id="month" placeholder value="1">
                             <p class="birth_txt"><label for="month">月</label></p>
 
-                            <input type="number" class="form-control form-control-lg" name="day" required min="1"
+                            <input type="number" class="form-control form-control-lg col-2" name="day" required min="1"
                                 max="31" id="day" placeholder value="1">
                             <p class="birth_txt"><label for="day">日</label></p>
                         </div>
@@ -54,21 +54,7 @@
 
 
             <!-- Twitter投稿誘導 -->
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5><a id="result"></a></h5>
-                        <p>作成した画像をぜひTwitterで紹介してください！<br>
-                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"
-                                    style="color: #55acee;"></i>つぶやく</a>
-                        </p>
 
-                        <small>↓こちらを付けてシェアしてくださると嬉しいです</small>
-                        <textarea class="form-control"
-                            area-label="With textarea"> #Bs応援タオルメーカー https://emuroku.github.io/buffaloes_towel_maker/</textarea>
-                    </div>
-                </div>
-            </div>
     </div>
 </body>
 
