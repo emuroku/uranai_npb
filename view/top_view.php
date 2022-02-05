@@ -4,35 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>あなたと相性最強なNPB選手占い</title>
+    <title>あなたと相性が最強な野球選手診断</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'top.css'); ?>">
+    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/top.css'); ?>">
+    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/common.css'); ?>">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <!-- navigation -->
-    <nav class="navbar navbar-expand-sm justify-content-center navbar-light bg-light">
-        <i class="fas fa-heart fa-2x"></i><h2> あなたと相性が最強な野球選手診断 </h2><i class="fas fa-heart fa-2x"></i>
+   <!-- navigation -->
+   <nav class="navbar navbar-expand-sm justify-content-center navbar-light bg-light">
+        <a class="navbar-brand" href="top.php">
+            <div class="title"><i class="fas fa-heart"></i>
+                <h2> あなたと相性が最強な野球選手診断 </h2><i class="fas fa-heart"></i>
+            </div>
+        </a>
     </nav>
 
     <!-- container -->
     <div class="container">
 
         <h5><i class="fa-solid fa-pen-field"></i>どうぶつ占いで、あなたと相性が最強の現役プロ野球選手を占います</h3>
-            <div class="col-12">
-            </div>
-
             <!-- 入力フォーム -->
             <div class="input_birthday">
                 <form method="post" action="result.php">
                     <!-- CSRF対策 -->
-                    <div class="form-group">
+                    <div class="form-group col-12">
                         <p>生年月日を入力してください</p>
                         <div class="birthday">
                             <input type="number" class="form-control form-control-lg col-4" name="year" required min="1926"

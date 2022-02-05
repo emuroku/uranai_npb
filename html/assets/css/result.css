@@ -40,9 +40,6 @@ button{
     font-size: 30px;
     color: #555555;
 }
-.player_info{
-    margin: 20px;
-}
 
 .player_team{
     font-size: 20px;
@@ -61,13 +58,21 @@ button{
     text-align: center;
 }
 
-i{
-  margin: 10px 10px;  
-}
-
 .share{
     font-size: 16px;
     display: flex;
     vertical-align: middle;
     padding: 20px, 10px;
+}
+
+.player_info{
+    display: flex;
+}
+
+.player_text_info{
+    width: 75%;
+}
+
+.team_img{
+    width: 25%;
 }

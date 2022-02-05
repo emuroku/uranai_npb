@@ -1,0 +1,16 @@
+footer{
+    margin: 100px 0 10px 0;
+}
+
+a {
+    text-decoration:none; 
+}
+
+.title{
+    display: flex;
+    padding: 20px;
+}
+
+i{
+    margin: 10px 10px;  
+  }

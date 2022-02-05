@@ -23,5 +23,8 @@ $user_result = get_user_result($db, $birth_year, $birth_month, $birth_day);
 // ベストパートナーの選手の結果を取得
 $player_result = get_player_result($db, $user_num);
 
+// ロゴ画像用に名前を取得
+$logoname = get_logoname($db, $player_result['team']);
+
 // topページのクライアントソースファイル読み込み
 include_once VIEW_PATH . 'result_view.php';
