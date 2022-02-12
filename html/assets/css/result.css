@@ -21,7 +21,9 @@ button{
 }
 
 .result_player{
-    margin: 40px 0px;
+    /* display: flex; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .animal_img{
         width: 300px;
@@ -43,6 +45,7 @@ button{
 
 .player_team{
     font-size: 20px;
+    margin: 20px;
 }
 
 .player_name{
@@ -60,19 +63,23 @@ button{
 
 .share{
     font-size: 16px;
-    display: flex;
     vertical-align: middle;
     padding: 20px, 10px;
 }
 
 .player_info{
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .player_text_info{
-    width: 75%;
+    width: 60%;
+    margin: 0;
 }
 
 .team_img{
-    width: 25%;
+    width: 40%;
+    margin: 20px 0;
 }
