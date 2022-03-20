@@ -26,11 +26,11 @@ button{
 .birthday{
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 
 .birth_txt{
-    margin: 10px;
-    font-size: 16px;
+    margin: 5px;
 }
 
 .copyright{
