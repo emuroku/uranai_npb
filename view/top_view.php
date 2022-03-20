@@ -30,7 +30,7 @@
                 <div class="input_birthday">
                     <form method="post" action="result.php">
                         <!-- CSRF対策 -->
-                        <div class="form-group col-12">
+                        <div class="form-group col-10">
                             <p>生年月日を入力してください</p>
                             <div class="birthday">
                                 <input type="number" class="form-control form-control-lg col-6" name="year" required min="1926" max="2030" id="year" placeholder value="1990">

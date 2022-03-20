@@ -26,6 +26,7 @@ button{
 .birthday{
     display: flex;
     justify-content: center;
+    padding: 0 10px;
 }
 
 .birth_txt{
