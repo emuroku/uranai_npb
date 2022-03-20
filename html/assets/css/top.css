@@ -1,6 +1,6 @@
 .container{
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .main_img{
@@ -16,7 +16,7 @@ button{
 }
 
 .input_birthday{
-    margin: 30px;
+    margin: 20px;
 }
 
 .submit{

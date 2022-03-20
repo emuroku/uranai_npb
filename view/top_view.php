@@ -7,8 +7,8 @@
     <title>あなたと相性が最強な野球選手診断</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/top.css'); ?>">
-    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/common.css'); ?>">
+    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'top.css'); ?>">
+    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'common.css'); ?>">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
@@ -16,8 +16,8 @@
     <!-- navigation -->
     <nav class="navbar navbar-expand-sm justify-content-center navbar-light bg-light">
         <!-- <a class="navbar-brand" href="top.php"> -->
-        <div class="title"><i class="fas fa-heart"></i>
-            <h2> あなたと相性が最強な野球選手診断 </h2><i class="fas fa-heart"></i>
+        <div class="title">
+            <h2> あなたと相性が最強な野球選手診断 </h2>
         </div>
         <!-- </a> -->
     </nav>
