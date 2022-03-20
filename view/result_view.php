@@ -62,7 +62,7 @@
                         <div class="share">
                             <i class="far fa-hand-point-down"></i>結果をシェア！<br />
                             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="私と相性が最強なのは <?php print($player_result['team'] . ' '
-                                                                                                                                            . $player_result['name'] . '選手！'); ?> " data-url="hhttp://npburanai.com/top.php" data-hashtags="あなたと相性が最強な野球選手診断,どうぶつ占い" data-size="large" data-show-count="false">Tweet</a>
+                                                                                                                                            . $player_result['name'] . '選手！'); ?> " data-url="http://npburanai.com/top.php" data-hashtags="あなたと相性が最強な野球選手診断,どうぶつ占い" data-size="large" data-show-count="false">Tweet</a>
                             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                         </div>
