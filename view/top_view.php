@@ -33,13 +33,13 @@
                         <div class="form-group col-12">
                             <p>生年月日を入力してください</p>
                             <div class="birthday">
-                                <input type="number" class="form-control form-control-lg col-4" name="year" required min="1926" max="2030" id="year" placeholder value="1990">
+                                <input type="number" class="form-control form-control-lg col-6" name="year" required min="1926" max="2030" id="year" placeholder value="1990">
                                 <p class="birth_txt"><label for="year">年</label></p>
 
-                                <input type="number" class="form-control form-control-lg col-2" name="month" required min="1" max="12" id="month" placeholder value="1">
+                                <input type="number" class="form-control form-control-lg col-3" name="month" required min="1" max="12" id="month" placeholder value="1">
                                 <p class="birth_txt"><label for="month">月</label></p>
 
-                                <input type="number" class="form-control form-control-lg col-2" name="day" required min="1" max="31" id="day" placeholder value="1">
+                                <input type="number" class="form-control form-control-lg col-3" name="day" required min="1" max="31" id="day" placeholder value="1">
                                 <p class="birth_txt"><label for="day">日</label></p>
                             </div>
                             <div class="submit"><button class="btn btn-primary" id="btn_submit">占う！</button></div>
