@@ -52,7 +52,7 @@
 </body>
 <footer>
     <div class="copyright">
-        <small>©emuroku.</small>
+    <small>@ m610310</small>
     </div>
 </footer>
 
