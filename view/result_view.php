@@ -44,7 +44,7 @@
                             <div class="player_type">タイプ：
                                 <?php print($player_result['text']); ?>
                             </div>
-                            <div class="player_info">
+                            <div class="player_info col-12">
                                
                                     <img src="<?php print(IMG_PATH . 'teams/logo_' . $logoname['name_eng'] . '.png'); ?>" class="team_img">
                                 <div class="player_text_info">
