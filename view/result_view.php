@@ -31,7 +31,7 @@
                     <div class="result_animal">
                         <h5>あなたは...</h3>
                             <div class="users_animal">
-                                <h3><?php print($user_result['text']); ?></h3>
+                                <?php print($user_result['text']); ?>
                             </div>
                             <img src="<?php print(IMG_PATH . 'animals/' . $user_result['animal'] . '.png'); ?>" class="animal_img">
                     </div>
