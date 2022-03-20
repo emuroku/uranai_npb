@@ -40,14 +40,13 @@
                 <section>
                     <div class="result_player">
                         <i class="fas fa-baseball-ball"></i>あなたと相性が最強なのは...
-                        <div class="p-3 mb-2 bg-light text-dark">
+                        <div class="p-1 mb-12 bg-light text-dark">
                             <div class="player_type">タイプ：
                                 <?php print($player_result['text']); ?>
                             </div>
                             <div class="player_info">
-                                <div class="team_img">
-                                    <img src="<?php print(IMG_PATH . 'teams/logo_' . $logoname['name_eng'] . '.png'); ?>">
-                                </div>
+                               
+                                    <img src="<?php print(IMG_PATH . 'teams/logo_' . $logoname['name_eng'] . '.png'); ?>" class="team_img">
                                 <div class="player_text_info">
                                     <div class="player_team">
                                         <?php print($player_result['team']); ?>
