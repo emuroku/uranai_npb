@@ -44,16 +44,16 @@ button{
 }
 
 .player_team{
-    font-size: 20px;
-    margin: 20px;
+    font-size: 16px;
+    margin: 14px;
 }
 
 .player_name{
-    font-size: 40px;
+    font-size: 24px;
 }
 
 .player_type{
-    font-size: 15px;
+    font-size: 12px;
     margin: 10px 0;
 }
 
@@ -71,7 +71,7 @@ button{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .player_text_info{
