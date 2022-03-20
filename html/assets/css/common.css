@@ -7,8 +7,10 @@ a {
 }
 
 .title{
-    display: flex;
+    /* display: flex; */
     padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 i{
