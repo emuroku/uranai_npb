@@ -16,7 +16,7 @@ button{
 }
 
 .result_animal{
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .result_player{
@@ -49,7 +49,7 @@ button{
 }
 
 .player_name{
-    font-size: 32px;
+    font-size: 28px;
     text-align: left;
     margin: 10px 0;
 }
@@ -86,7 +86,7 @@ button{
     width: 20%;
     margin: 10px;
     text-align: right;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     object-fit: cover; 
 }
