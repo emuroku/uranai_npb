@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>あなたと相性が最強な野球選手診断</title>
@@ -10,16 +10,14 @@
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'top.css'); ?>">
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'common.css'); ?>">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta property="og:url" content="http://npburanai.com/top.php" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="あなたと相性が最強な野球選手診断" />
+    <meta property="og:description" content="どうぶつ占いで、あなたと相性が最強の現役プロ野球選手を占います" />
+    <meta property="og:site_name" content="あなたと相性が最強な野球選手診断" />
+    <meta property="og:image" content="http://npburanai.com/assets/img/ogp/ogp.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 </head>
-    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-        <meta property="og:url" content="http://npburanai.com/top.php" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="あなたと相性が最強な野球選手診断" />
-        <meta property="og:description" content="どうぶつ占いで、あなたと相性が最強の現役プロ野球選手を占います" />
-        <meta property="og:site_name" content="あなたと相性が最強な野球選手診断" />
-        <meta property="og:image" content="http://npburanai.com/assets/img/ogp/ogp.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-    </head>
 
 <body>
     <!-- navigation -->
