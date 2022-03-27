@@ -20,8 +20,7 @@ $birth_day = get_post('day');
 
 // 有効な日付かどうかのチェック
 if(is_available_day($db, $birth_month, $birth_day) == TRUE){
-    header('Location: http://npburanai.com/top.php?error=true');
-    // header('Location: http://localhost:8080/uranai_npb/html/top.php?error=true');
+    header('Location: /uranai_npb/html/top.php?error=true');
 }
 
 // ユーザーのどうぶつ占い結果を取得
