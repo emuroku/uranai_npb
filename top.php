@@ -14,8 +14,5 @@ $token = get_csrf_token();
 // PDO取得
 $db = get_db_connect();
 
-// 
-
-
 // topページのクライアントソースファイル読み込み
 include_once VIEW_PATH . 'top_view.php';
