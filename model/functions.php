@@ -1,5 +1,8 @@
 <?php
 
+// 汎用関数ファイル読み込み
+require_once MODEL_PATH . 'functions.php';
+
 // SESSIONの__errorsキーに$errorを設定する
 function set_error($error){
     $_SESSION['__errors'][] = $error;
@@ -31,6 +34,16 @@ function get_post($name){
     // $nameのPOSTパラメータが設定されている場合
     if(isset($_POST[$name]) === TRUE){
         return $_POST[$name];
+    };
+    // POSTパラメータが設定されていない場合は、空の文字列を返す
+    return '';
+}
+
+// $name のGETパラメータを取得する。値が入っていない場合は空の文字列を返す
+function get_get($name){
+    // $nameのPOSTパラメータが設定されている場合
+    if(isset($_GET[$name]) === TRUE){
+        return $_GET[$name];
     };
     // POSTパラメータが設定されていない場合は、空の文字列を返す
     return '';
@@ -174,4 +187,22 @@ function get_logoname($db, $name){
     
     // 取得した配列の$col_nameの値を返す
     return $result;
+}
+
+// 指定のテーブルからすべての登録済みの情報を配列で取得する
+function get_table_list($dbh, $table_name)
+{
+    // SQL文生成
+    $sql = 'SELECT * FROM '. $table_name . ';';
+    // SQL文を実行する準備
+    try {
+        $stmt = $dbh->prepare($sql);
+        // SQL文を実行
+        $stmt->execute();
+        // レコードの取得
+        $data = $stmt->fetchAll();
+    } catch (PDOException $e) {
+        throw $e;
+    }
+    return $data;
 }

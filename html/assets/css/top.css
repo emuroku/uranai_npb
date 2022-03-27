@@ -37,3 +37,6 @@ button{
     text-align: center;
 }
 
+.error_msg{
+    color: #FF0000;
+}
