@@ -1,5 +1,4 @@
 <?php
-
 // フォームの入力値から結果を算出する
     // フォーム入力値の読み込み
 
@@ -27,3 +26,16 @@ function get_item($db, $num){
     return fetch_query($db, $sql);
   }
   
+  // 入力された日付（month / dayの組み合わせ）が有効化をチェックする
+  function is_available_day($db, $birth_month, $birth_day){
+    // 存在しない組み合わせデータの取得
+    $unavailable_day_list = get_table_list($db, 'unavailable_day_list');
+    // フラグの設定
+    $err = FALSE;
+    foreach($unavailable_day_list as $line){
+      if($line['month'] == $birth_month && $line['day'] == $birth_day){
+        $err = TRUE;
+      }
+    }
+    return $err;
+  }

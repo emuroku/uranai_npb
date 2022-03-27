@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>あなたと相性が最強な野球選手診断</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'top.css'); ?>">
+    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/top.css'); ?>">
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'common.css'); ?>">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta property="og:url" content="http://npburanai.com/top.php" />
@@ -49,6 +48,11 @@
                                 <input type="number" class="form-control form-control-lg col-3" name="day" required min="1" max="31" id="day" placeholder value="1">
                                 <p class="birth_txt"><label for="day">日</label></p>
                             </div>
+                            <div class="error_msg">
+                                <?php if(isset($err)){
+                                    print("存在しない日付は入力できません！");
+                                 }; ?>
+                            </div>
                             <div class="submit"><button class="btn btn-primary" id="btn_submit">占う！</button></div>
                         </div>
                     </form>
@@ -56,11 +60,10 @@
                 <!-- Twitter投稿誘導 -->
         </div>
     </div>
-</body>
+    </body>
 <footer>
     <div class="copyright">
         <small>@ m610310</small>
     </div>
 </footer>
-
 </html>

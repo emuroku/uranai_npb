@@ -7,6 +7,8 @@ require_once '../conf/const.php';
 require_once MODEL_PATH . 'db.php';
 // 汎用関数ファイル読み込み
 require_once MODEL_PATH . 'functions.php';
+// result関数ファイル読み込み
+require_once MODEL_PATH . 'result.php';
 
 // DB接続
 $db = get_db_connect();
@@ -15,6 +17,12 @@ $db = get_db_connect();
 $birth_year = get_post('year');
 $birth_month = get_post('month');
 $birth_day = get_post('day');
+
+// 有効な日付かどうかのチェック
+if(is_available_day($db, $birth_month, $birth_day) == TRUE){
+    header('Location: http://npburanai.com/top.php?err=true');
+    // header('Location: http://localhost:8080/uranai_npb/html/top.php?err=true');
+}
 
 // ユーザーのどうぶつ占い結果を取得
 $user_num = get_animal_uranai_result($db, $birth_year, $birth_month, $birth_day);
