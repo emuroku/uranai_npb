@@ -15,7 +15,7 @@ $token = get_csrf_token();
 $db = get_db_connect();
 
 // 存在しない日付入力フラグの確認
-$err = get_get('error');
+$error = get_get('error');
 
 // topページのクライアントソースファイル読み込み
 include_once VIEW_PATH . 'top_view.php';

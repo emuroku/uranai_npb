@@ -42,10 +42,10 @@ function get_post($name){
 // $name のGETパラメータを取得する。値が入っていない場合は空の文字列を返す
 function get_get($name){
     // $nameのPOSTパラメータが設定されている場合
-    if(isset($_GET[$name]) === TRUE){
+    if(isset($_GET[$name]) == TRUE){
         return $_GET[$name];
     };
-    // POSTパラメータが設定されていない場合は、空の文字列を返す
+    // GETパラメータが設定されていない場合は、空の文字列を返す
     return '';
 }
 

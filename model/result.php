@@ -31,10 +31,10 @@ function get_item($db, $num){
     // 存在しない組み合わせデータの取得
     $unavailable_day_list = get_table_list($db, 'unavailable_day_list');
     // フラグの設定
-    $err = FALSE;
+    $err = '';
     foreach($unavailable_day_list as $line){
       if($line['month'] == $birth_month && $line['day'] == $birth_day){
-        $err = TRUE;
+        $err = 'true';
       }
     }
     return $err;

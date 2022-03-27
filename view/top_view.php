@@ -49,7 +49,8 @@
                                 <p class="birth_txt"><label for="day">日</label></p>
                             </div>
                             <div class="error_msg">
-                                <?php if(isset($err)){
+                                <?php 
+                                    if($error == 'true'){
                                     print("存在しない日付は入力できません！");
                                  }; ?>
                             </div>
