@@ -67,7 +67,7 @@
 
                         </div>
                         <div class="home">
-                            <a href="/uranai_npb/html/top.php">
+                            <a href="http://npburanai.com/top.php">
                             <i class="fa-solid fa-house"></i>もどる</a>
                         </div>
                     </section>
