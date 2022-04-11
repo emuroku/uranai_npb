@@ -104,15 +104,6 @@ function get_uranai_result($db, $num){
     return $result;
 }
 
-// ユーザーの誕生日情報からユーザーの結果情報を取得して配列で返す
-function get_user_result($db, $year, $month, $day){
-    // 結果ナンバーの取得
-    $num = get_animal_uranai_result($db, $year, $month, $day);
-
-    // 結果のどうぶつの情報を取得して返す
-    return get_uranai_result($db, $num);
-}
-
 // ユーザーの動物占いの結果からベストパートナーの選手情報を取得して配列で返す
 function get_player_result($db, $num){
     // compatibility listからベストパートナーのナンバーを取得
