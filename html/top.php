@@ -8,6 +8,12 @@ require_once MODEL_PATH . 'db.php';
 // 汎用関数ファイル読み込み
 require_once MODEL_PATH . 'functions.php';
 
+// session開始
+session_start();
+
+// 保存済みの結果ナンバーを履き
+unset($_SESSION['user_num']);
+
 // CSRF対策
 $token = get_csrf_token();
 
