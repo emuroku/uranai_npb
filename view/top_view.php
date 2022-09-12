@@ -7,9 +7,15 @@
     <title>あなたと相性が最強な野球選手診断</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/top.css'); ?>">
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/common.css'); ?>">
+
+    <!-- icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <!-- OGP設定 -->
     <meta property="og:url" content="http://npburanai.com/top.php" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="あなたと相性が最強な野球選手診断" />
@@ -22,11 +28,9 @@
 <body>
     <!-- navigation -->
     <nav class="navbar navbar-expand-sm justify-content-center navbar-light bg-light">
-        <!-- <a class="navbar-brand" href="top.php"> -->
         <div class="title">
-            <h2> あなたと相性が最強な野球選手診断 </h2>
+            <h2><i class="fas fa-baseball-ball"></i>あなたと相性が最強な野球選手診断<i class="fas fa-baseball-ball"></i></h2>
         </div>
-        <!-- </a> -->
     </nav>
 
     <!-- container -->
@@ -59,7 +63,6 @@
                         </div>
                     </form>
                 </div>
-                <!-- Twitter投稿誘導 -->
         </div>
     </div>
 </body>

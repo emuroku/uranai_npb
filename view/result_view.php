@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>あなたと相性が最強な野球選手診断</title>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'result.css'); ?>">
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/common.css'); ?>">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <!-- icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2a591dac16.js" crossorigin="anonymous"></script>
 
     <!-- フォント読み込み -->
@@ -25,7 +29,7 @@
     <nav class="navbar navbar-expand-sm justify-content-center navbar-light bg-light">
         <!-- <a class="navbar-brand" href="top.php"> -->
         <div class="title">
-            <h2> あなたと相性が最強な野球選手診断 </h2>
+            <h2><i class="fas fa-baseball-ball"></i>あなたと相性が最強な野球選手診断<i class="fas fa-baseball-ball"></i></h2>
         </div>
         <!-- </a> -->
     </nav>
@@ -84,12 +88,6 @@
         </div>
     </div>
 </body>
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-</body>
 <footer>
     <div class="copyright">
         <p>© あなたと相性が最強な野球選手診断</p>
@@ -97,5 +95,4 @@
         <p>
     </div>
 </footer>
-
 </html>
