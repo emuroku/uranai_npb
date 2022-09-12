@@ -5,12 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>あなたと相性が最強な野球選手診断</title>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'result.css'); ?>">
-    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'common.css'); ?>">
+    <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/common.css'); ?>">
+
+    <!-- icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2a591dac16.js" crossorigin="anonymous"></script>
+
+    <!-- フォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,7 +29,7 @@
     <nav class="navbar navbar-expand-sm justify-content-center navbar-light bg-light">
         <!-- <a class="navbar-brand" href="top.php"> -->
         <div class="title">
-            <h2> あなたと相性が最強な野球選手診断 </h2>
+            <h2><i class="fas fa-baseball-ball"></i>あなたと相性が最強な野球選手診断<i class="fas fa-baseball-ball"></i></h2>
         </div>
         <!-- </a> -->
     </nav>
@@ -40,19 +51,21 @@
                 <section>
                     <div class="result_player">
                         <i class="fas fa-baseball-ball"></i>あなたと相性が最強なのは...
-                        <div class="p-1 mb-12 bg-light text-dark">
-                            <div class="player_type">タイプ：
-                                <?php print($player_result['text']); ?>
-                            </div>
-                            <div class="player_info col-12">
-                               
+                        <div class="result_box">
+                            <div class="p-1 bg-light text-dark col-12">
+                                <div class="player_type">タイプ：
+                                    <?php print($player_result['text']); ?>
+                                </div>
+                                <div class="player_info col-12">
+
                                     <img src="<?php print(IMG_PATH . 'teams/logo_' . $logoname['name_eng'] . '.png'); ?>" class="team_img">
-                                <div class="player_text_info">
-                                    <div class="player_team">
-                                        <?php print($player_result['team']); ?>
-                                    </div>
-                                    <div class="player_name">
-                                        <?php print($player_result['name']); ?>
+                                    <div class="player_text_info">
+                                        <div class="player_team">
+                                            <?php print($player_result['team']); ?>
+                                        </div>
+                                        <div class="player_name">
+                                            <?php print($player_result['name']); ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -68,23 +81,18 @@
                         </div>
                         <div class="home">
                             <a href="http://npburanai.com/top.php">
-                            <i class="fa-solid fa-house"></i>もどる</a>
+                                <i class="fa-solid fa-house"></i>もどる</a>
                         </div>
                     </section>
 
         </div>
     </div>
 </body>
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
-</body>
 <footer>
     <div class="copyright">
-        <small>@ m610310</small>
+        <p>© あなたと相性が最強な野球選手診断</p>
+        <p>By <a href="https://twitter.com/m610310">@m610310</a>
+        <p>
     </div>
 </footer>
-
 </html>

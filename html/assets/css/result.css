@@ -21,9 +21,8 @@ button{
 }
 
 .result_player{
-    /* display: flex; */
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    justify-content: center;
 }
 .animal_img{
         width: 320px;
@@ -90,4 +89,8 @@ button{
     width: 90px;
     height: 90px;
     object-fit: cover; 
+}
+
+.result_box{
+    text-align: center;
 }

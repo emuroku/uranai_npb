@@ -20,12 +20,8 @@ $db = get_db_connect();
 if ($_SESSION['user_num'] !== NULL) {
     $user_num = $_SESSION['user_num'];
 
-    // デバッグ用
-    // print('セッションにナンバーが保存されています' . $_SESSION['user_num']);
-
     // ユーザーの結果が未算出であれば算出
 } else {
-
     // POSTされたフォームの入力値を取得
     $birth_year = get_post('year');
     $birth_month = get_post('month');
@@ -42,8 +38,6 @@ if ($_SESSION['user_num'] !== NULL) {
     // sessionにユーザーの結果ナンバーを保存
     $_SESSION['user_num'] = $user_num;
 
-    // デバッグ用
-    // print('セッションに新たにナンバーが保存されました' . $_SESSION['user_num']);
 }
 $user_result = get_uranai_result($db, $user_num);
 

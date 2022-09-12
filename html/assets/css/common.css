@@ -1,5 +1,9 @@
 footer{
-    margin: 100px 0 10px 0;
+    text-align: center;
+    bottom: 0; /*下に固定*/
+    flex: block;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 a {
@@ -20,4 +24,10 @@ i{
 .home{
     margin: 20px;
     padding: 20px;
+}
+
+.copyright{
+    text-align: center;
+    color: #444444;
+    font-size: small;
 }
