@@ -47,7 +47,7 @@
                                 <input type="number" class="form-control form-control-lg col-6" name="year" required min="1926" max="2030" id="year" placeholder value="1990">
                                 <p class="birth_txt"><label for="year">年</label></p>
 
-                                <input type="number" class="form-control form-control-lg" name="month" required min="1" max="12" id="month" placeholder value="1">
+                                <input type="number" class="form-control form-control-lg col-3" name="month" required min="1" max="12" id="month" placeholder value="1">
                                 <p class="birth_txt"><label for="month">月</label></p>
 
                                 <input type="number" class="form-control form-control-lg col-3" name="day" required min="1" max="31" id="day" placeholder value="1">
