@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-sm justify-content-center navbar-light bg-light">
         <!-- <a class="navbar-brand" href="top.php"> -->
         <div class="title">
-            <h2><i class="fas fa-baseball-ball"></i>あなたと相性が最強な野球選手診断<i class="fas fa-baseball-ball"></i></h2>
+            <h1><i class="fas fa-baseball-ball"></i>あなたと相性が最強な野球選手診断<i class="fas fa-baseball-ball"></i></h1>
         </div>
         <!-- </a> -->
     </nav>
@@ -37,7 +37,7 @@
     <!-- container -->
     <div class="container">
         <div class="col-12">
-            <h5><i class="fa-solid fa-pen-field"></i>どうぶつ占いで、あなたと相性が最強の現役プロ野球選手を占います</h3>
+            <h2><i class="fa-solid fa-pen-field"></i>どうぶつ占いで、あなたと相性が最強の現役プロ野球選手を占います</h2>
                 <section>
                     <div class="result_animal">
                         <h5>あなたは...</h3>
