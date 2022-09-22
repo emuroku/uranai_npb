@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>あなたと相性が最強な野球選手診断</title>
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . 'result.css'); ?>">
     <link rel="stylesheet" href="<?php print(STYLESHEET_PATH . '/common.css'); ?>">
@@ -87,12 +87,13 @@
 
         </div>
     </div>
+    <footer>
+        <div class="copyright">
+            <p>© あなたと相性が最強な野球選手診断</p>
+            <p>By <a href="https://twitter.com/m610310">@m610310</a>
+            <p>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="copyright">
-        <p>© あなたと相性が最強な野球選手診断</p>
-        <p>By <a href="https://twitter.com/m610310">@m610310</a>
-        <p>
-    </div>
-</footer>
+
 </html>
