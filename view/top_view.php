@@ -68,8 +68,7 @@
     <footer>
         <div class="copyright">
             <p>© あなたと相性が最強な野球選手診断</p>
-            <p>By <a href="https://twitter.com/m610310">@m610310</a>
-            <p>
+            <p>By <a href="https://twitter.com/m610310">@m610310</a>    </p>
         </div>
     </footer>
 </body>

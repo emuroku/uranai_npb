@@ -1,9 +1,12 @@
 footer{
-    text-align: center;
-    bottom: 0; /*下に固定*/
-    flex: block;
-    justify-content: center;
-    margin-top: 100px;
+    /* text-align: center; */
+    bottom: 0;
+    /* flex: block; */
+    /* justify-content: center; */
+    /* margin-top: 100px; */
+    position: absolute;
+    /* margin: 0 auto; */
+    width: 100%;
 }
 
 a {
